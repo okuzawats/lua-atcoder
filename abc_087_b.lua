@@ -1,7 +1,4 @@
-a = io.read("*n")
-b = io.read("*n")
-c = io.read("*n")
-x = io.read("*n")
+a, b, c, x = io.read("*n", "*n", "*n", "*n")
 
 s = 0
 for i = 0, a  do
