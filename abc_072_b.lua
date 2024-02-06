@@ -1,4 +1,4 @@
 s = io.read()
 a = ""
-for i = 1, #s do if i % 2 > 0 then a = a..s:sub(i, i) end end
+for i = 1, #s, 2 do a = a..s:sub(i, i) end
 print(a)
