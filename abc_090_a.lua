@@ -1,3 +1,2 @@
-s = string.sub
 r = io.read
-print(s(r(), 1, 1)..s(r(), 2, 2)..s(r(), 3, 3))
+print(r():sub(1, 1)..r():sub(2, 2)..r():sub(3, 3))
