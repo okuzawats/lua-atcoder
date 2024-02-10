@@ -1,7 +1,3 @@
-n, k = io.read("n", "n")
-c = 0
-while n / k > 0 do
-  c = c + 1
-  n = n // k
-end
+c, n, k = 0, io.read("n", "n")
+while n / k > 0 do c, n = c + 1, n // k end
 print(c)
