@@ -8,7 +8,7 @@ count = 0
 for i = 1, n - 2 do
   for j = i + 1, n - 1 do
     for k = j + 1, n do
-      local a, b, c = l[i], l[j], l[k]
+      a, b, c = l[i], l[j], l[k]
       if a == b or b == c or c == a then
         goto continue
       end
