@@ -1,9 +1,3 @@
 k, a, b = io.read("n", "n", "n")
-out = "NG"
-for i = a, b do
-  if i % k < 1 then
-    out = "OK"
-    break
-  end
-end
-print(out)
+for i = a, b do if i % k < 1 then print("OK"); os.exit() end end
+print("NG")
