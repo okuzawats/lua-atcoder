@@ -6,8 +6,11 @@ table.sort(a)
 c = 0
 for i = 1, n do
   if x >= a[i] then
-    if i == n then c = c - 1 end
-    x, c = x - a[i], c + 1
+    if i ~= n then
+      x, c = x - a[i], c + 1
+    elseif x == a[i] then
+      c = c + 1
+    end
   end
 end
 print(c)
