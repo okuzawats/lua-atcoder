@@ -1,0 +1,6 @@
+s = io.read()
+ :gsub("eraser", "")
+ :gsub("erase", "")
+ :gsub("dreamer", "")
+ :gsub("dream", "")
+print(s == "" and "YES" or "NO")
