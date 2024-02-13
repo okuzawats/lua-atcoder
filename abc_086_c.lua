@@ -8,6 +8,7 @@ for i = 1, n do
     f = false
     break
   end
+  x, y, z = a, b, t
 end
 
 print(f and "Yes" or "No")
