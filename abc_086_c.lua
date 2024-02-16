@@ -1,6 +1,4 @@
-n = io.read("n")
-
-x, y, z, f = 0, 0, 0, true
+x, y, z, f, n = 0, 0, 0, true, io.read("n")
 for i = 1, n do
   t, a, b = io.read("n", "n", "n")
   d = math.abs(a - x) + math.abs(b - y)
@@ -10,5 +8,4 @@ for i = 1, n do
   end
   x, y, z = a, b, t
 end
-
 print(f and "Yes" or "No")
